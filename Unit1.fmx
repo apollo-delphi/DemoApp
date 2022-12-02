@@ -1,0 +1,216 @@
+object DemoForm: TDemoForm
+  Left = 0
+  Top = 0
+  Caption = 'Demo App'
+  ClientHeight = 480
+  ClientWidth = 723
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object btnImportData: TButton
+    Position.X = 600.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Import Data'
+    OnClick = btnImportDataClick
+  end
+  object lbHost: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 10.000000000000000000
+    Text = 'Host'
+    TabOrder = 3
+  end
+  object edHost: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 88.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lbDatabase: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 35.000000000000000000
+    Text = 'Database'
+    TabOrder = 5
+  end
+  object edDatabase: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Position.X = 88.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btnConnect: TButton
+    Position.X = 512.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 7
+    Text = 'Connect'
+    OnClick = btnConnectClick
+  end
+  object lbConnectionState: TLabel
+    Position.X = 512.000000000000000000
+    Position.Y = 35.000000000000000000
+    Text = 'Disconnected'
+    TabOrder = 8
+  end
+  object TMSFNCGrid1: TTMSFNCGrid
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.Y = 72.000000000000000000
+    Size.Width = 723.000000000000000000
+    Size.Height = 408.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    DefaultRowHeight = 40.000000000000000000
+    FixedColumns = 0
+    ColumnCount = 0
+    RowCount = 1
+    Options.Bands.Enabled = True
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.Grouping.GroupCountFormat = '(%d)'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.ColumnSizing = True
+    Options.Mouse.ClickMargin = 0
+    Options.Mouse.ColumnSizeMargin = 6
+    Options.Mouse.RowSizeMargin = 6
+    Adapter = TMSFNCGridDatabaseAdapter1
+    Columns = <
+      item
+        BorderWidth = 1
+        FixedFont.Color = xFF454545
+        FixedFont.Name = 'Segoe UI'
+        FixedFont.StyleExt = {00070000000000000004000000}
+        Font.Color = xFF7A7A7A
+        Font.Name = 'Segoe UI'
+        ID = ''
+        Width = 70.000000000000000000
+      end
+      item
+        BorderWidth = 1
+        FixedFont.Color = xFF454545
+        FixedFont.Name = 'Segoe UI'
+        FixedFont.StyleExt = {00070000000000000004000000}
+        Font.Color = xFF7A7A7A
+        Font.Name = 'Segoe UI'
+        ID = ''
+        Width = 250.000000000000000000
+      end
+      item
+        BorderWidth = 1
+        FixedFont.Color = xFF454545
+        FixedFont.Name = 'Segoe UI'
+        FixedFont.StyleExt = {00070000000000000004000000}
+        Font.Color = xFF7A7A7A
+        Font.Name = 'Segoe UI'
+        ID = ''
+        Width = 100.000000000000000000
+      end
+      item
+        BorderWidth = 1
+        FixedFont.Color = xFF454545
+        FixedFont.Name = 'Segoe UI'
+        FixedFont.StyleExt = {00070000000000000004000000}
+        Font.Color = xFF7A7A7A
+        Font.Name = 'Segoe UI'
+        ID = ''
+        Width = 100.000000000000000000
+      end
+      item
+        BorderWidth = 1
+        FixedFont.Color = xFF454545
+        FixedFont.Name = 'Segoe UI'
+        FixedFont.StyleExt = {00070000000000000004000000}
+        Font.Color = xFF7A7A7A
+        Font.Name = 'Segoe UI'
+        ID = ''
+        Width = 90.000000000000000000
+      end>
+    DefaultFont.Name = 'Segoe UI'
+    TopRow = 1
+    Appearance.FixedLayout.Fill.Color = xFFEEF2F9
+    Appearance.FixedLayout.Font.Size = 14.000000000000000000
+    Appearance.FixedLayout.Font.Color = xFF454545
+    Appearance.FixedLayout.Font.Name = 'Segoe UI'
+    Appearance.FixedLayout.Font.StyleExt = {00070000000000000004000000}
+    Appearance.NormalLayout.Fill.Color = xFFF6F8FC
+    Appearance.NormalLayout.Font.Color = xFF7A7A7A
+    Appearance.NormalLayout.Font.Name = 'Segoe UI'
+    Appearance.GroupLayout.Fill.Color = xFF6E93C3
+    Appearance.GroupLayout.Font.Color = claWhite
+    Appearance.GroupLayout.Font.Name = 'Segoe UI'
+    Appearance.SummaryLayout.Fill.Color = xFFB9C5D5
+    Appearance.SummaryLayout.Font.Name = 'Segoe UI'
+    Appearance.SelectedLayout.Fill.Color = xFFBBDEFA
+    Appearance.SelectedLayout.Font.Color = xFF454545
+    Appearance.SelectedLayout.Font.Name = 'Segoe UI'
+    Appearance.FocusedLayout.Fill.Color = xFF74BDF4
+    Appearance.FocusedLayout.Font.Color = xFF454545
+    Appearance.FocusedLayout.Font.Name = 'Segoe UI'
+    Appearance.FixedSelectedLayout.Fill.Color = claLightsteelblue
+    Appearance.FixedSelectedLayout.Font.Name = 'Segoe UI'
+    Appearance.BandLayout.Fill.Color = xFFFFFFFE
+    Appearance.BandLayout.Font.Color = xFF7A7A7A
+    Appearance.BandLayout.Font.Name = 'Segoe UI'
+    Appearance.ProgressLayout.Format = '%.0f%%'
+    LeftCol = 0
+    ScrollMode = scmItemScrolling
+    GlobalFont.Scale = 1.000000000000000000
+    GlobalFont.Style = []
+    DesignTimeSampleData = True
+    object TMSFNCGridDatabaseAdapter1: TTMSFNCGridDatabaseAdapter
+      Size.Width = 26.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      Position.X = 576.000000000000000000
+      Position.Y = 184.000000000000000000
+      Active = True
+      Grid = TMSFNCGrid1
+      DataSource = DataSource
+      Columns = <>
+    end
+  end
+  object FDConnection: TFDConnection
+    Params.Strings = (
+      'User_Name=sysdba'
+      'Password=masterkey')
+    Left = 576
+    Top = 64
+  end
+  object FDQuery: TFDQuery
+    Connection = FDConnection
+    Left = 576
+    Top = 120
+  end
+  object FDBatchMove: TFDBatchMove
+    Mappings = <>
+    LogFileName = 'Data.log'
+    Left = 576
+    Top = 184
+  end
+  object DataSource: TDataSource
+    DataSet = FDData
+    Left = 656
+    Top = 64
+  end
+  object FDData: TFDQuery
+    ChangeAlerter = FDEventAlerter
+    Connection = FDConnection
+    Left = 656
+    Top = 120
+  end
+  object FDEventAlerter: TFDEventAlerter
+    Connection = FDConnection
+    OnAlert = FDEventAlerterAlert
+    Left = 656
+    Top = 256
+  end
+end

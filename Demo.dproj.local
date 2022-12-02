@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.147,C:\Users\alezzle\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Dev\apollo-delphi\demos\Demo-FireDac\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.912,D:\Dev\apollo-delphi\demos\Demo-FireDac\DemoFireDac.dproj=D:\Dev\apollo-delphi\demos\Demo-FireDac\Demo.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.826,C:\Users\alezzle\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Dev\apollo-delphi\demos\Demo-FireDac\DemoFireDac.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.147,C:\Users\alezzle\Documents\Embarcadero\Studio\Projects\Unit1.fmx=D:\Dev\apollo-delphi\demos\Demo-FireDac\Unit1.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.076,=C:\Users\alezzle\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.099,=C:\Users\alezzle\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.213,=C:\Users\alezzle\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.615,=C:\Users\alezzle\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
